@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+        "sharp": "^0.32.5",
+        "node-fetch": "^2.6.7",
+        "@nsfwspy/node": "^1.0.7"
+    }
+}
