@@ -13,7 +13,6 @@ app.get('/detect',async (req, res) => {
         if(req.query.key != "DuckDevisbest9447") return res.send({error:"no"});
         try {
             await nsfwSpy.load();
-            const fetch = require('node-fetch')
             fetch(req.query.image)
             .then(res => {
                 if(!res.headers.get('content-type').startsWith("image/")) return res.send({error:"image?"})
